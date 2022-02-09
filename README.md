@@ -1,13 +1,5 @@
-StreamSaver.js (legacy-ish)
+StreamSaver.js
 ===========================
-
-... Don't worry it's not deprecated. It's still maintained and i still recommend 
-using this when needed. Just want to let you know that there is this new native way
-to save files to the HD: https://wicg.github.io/native-file-system which is more
-or less going to make FileSaver, StreamSaver and similar packages a bit obsolete
-in the future, it'still in a experimental stage and not implemented by all browser.
-That is why I also built [native-file-system-adapter](https://github.com/jimmywarting/native-file-system-adapter)
-so you can have it in all Browsers, Deno, and NodeJS with different storages
 
 [![npm version][npm-image]][npm-url]
 
@@ -168,7 +160,7 @@ python -m SimpleHTTPServer 3001
 
 [1]: https://github.com/eligrey
 [2]: https://github.com/eligrey/FileSaver.js
-[3]: https://github.com/jimmywarting/StreamSaver.js/blob/master/example.html
+[3]: https://github.com/yume-chan/StreamSaver.js/blob/master/example.html
 [4]: https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent/respondWith
 [5]: https://developer.mozilla.org/en/docs/Web/HTML/Element/a#attr-download
 [6]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
@@ -185,6 +177,6 @@ python -m SimpleHTTPServer 3001
 [15]: https://www.npmjs.com/package/@mattiasbuelens/web-streams-polyfill
 [16]: https://developer.microsoft.com/en-us/microsoft-edge/platform/status/fetchapi
 [19]: https://webtorrent.io
-[examples]: https://github.com/jimmywarting/StreamSaver.js/blob/master/examples
-[npm-image]: https://img.shields.io/npm/v/streamsaver.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/streamsaver
+[examples]: https://github.com/yume-chan/StreamSaver.js/blob/master/examples
+[npm-image]: https://img.shields.io/npm/v/@yume-chan/stream-saver.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/@yume-chan/stream-saver
