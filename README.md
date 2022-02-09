@@ -3,6 +3,15 @@ StreamSaver.js
 
 [![npm version][npm-image]][npm-url]
 
+## Changes
+
+1. Removed domain name from download link
+2. Add `Cross-Origin-Embedder-Policy: require-corp` header to download link for sites that enabled it.
+
+Now it should always be self-hosted.
+
+## Original README
+
 First I want to thank [Eli Grey][1] for a fantastic work implementing the
 [FileSaver.js][2] to save files & blobs so easily!
 But there is one obstacle - The RAM it can hold and the max blob size limitation
