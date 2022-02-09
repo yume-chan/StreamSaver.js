@@ -20,7 +20,7 @@ self.onmessage = event => {
   }
 
   const data = event.data
-  const downloadUrl = data.url || self.registration.scope + Math.random() + '/' + (typeof data === 'string' ? data : data.filename)
+  const downloadUrl = data.url || Math.random() + '/' + (typeof data === 'string' ? data : data.filename)
   const port = event.ports[0]
   const metadata = new Array(3) // [stream, data, port]
 
@@ -94,6 +94,7 @@ self.onfetch = event => {
     // but octet-stream should stop it.
     'Content-Security-Policy': "default-src 'none'",
     'X-Content-Security-Policy': "default-src 'none'",
+    'Cross-Origin-Embedder-Policy': 'require-corp',
     'X-WebKit-CSP': "default-src 'none'",
     'X-XSS-Protection': '1; mode=block'
   })
